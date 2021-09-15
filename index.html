@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search the web</title>
+  </head>
+  <body>
+    <form id="input" role="search">
+      <input
+        type="search"
+        id="query"
+        name="query"
+        placeholder="Search the web"
+      />
+    </form>
+    <script>
+      const input = document.getElementById("input");
+      const query = document.getElementById("query");
+      const ddg = "https://duckduckgo.com/?q=";
+
+      function search(event) {
+        event.preventDefault();
+        const url = ddg + query.value;
+        window.open(url, "_self");
+      }
+
+      f.addEventListener("submit", search);
+    </script>
+  </body>
+</html>
