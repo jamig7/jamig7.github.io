@@ -13,17 +13,17 @@
       />
     </form>
     <script>
-      const input = document.getElementById("input");
+      const i = document.getElementById("input");
       const query = document.getElementById("q");
       const ddg = "https://duckduckgo.com/?q=";
 
-      function search(event) {
+      function go(event) {
         event.preventDefault();
         const url = ddg + query.value;
         window.open(url, "_self");
       }
 
-      f.addEventListener("submit", search);
+      f.addEventListener("submit", go);
     </script>
   </body>
 </html>
